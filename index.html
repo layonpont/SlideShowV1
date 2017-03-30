@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    </head>
+    
+    <body>
+        <div id="container">
+            <div id="slideshow" class="cycle-slideshow"
+            data-cycle-fx = "fade"
+            data-cycle-speed = "600"
+            data-cycle-timeout = "3000"
+            data-cycle-pager = "#pager"
+            data-cycle-pager-template ="<a href='#'><img src= '{{src}}' height= 100 width= 150></a>"
+            data-cycle-next = "#next"
+            data-cycle-prev = "#previous"
+            data-cycle-manual-fx = "scrollHorz"
+            data-cycle-manual-speed = "400"
+            data-cycle-pager-fx = "fade">
+                <img src="img/bently.jpg" alt="">
+                <img src="img/benz.jpg" alt="">
+                <img src="img/bmw.jpg" alt="">
+                <img src="img/mozda.jpg" alt="">
+                <img src="img/mustang.jpg" alt="">
+                <img src="img/tesla.jpg" alt="">
+            </div>
+            <div id="pager"></div>
+            <img id="previous" src="img/back.svg">
+            <img id="next" src="img/next.svg">
+        </div>
+
+
+
+        <script src="http://code.jquery.com/jquery-3.2.0.min.js"></script>
+        <script src="http://malsup.github.io/min/jquery.cycle2.min.js"></script>
+    </body>
+
+
+</html>
